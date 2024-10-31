@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* imagem de fundo (papel de fundo do site)*/
+.fundo {
+  background-color: #1e0573; /* é esse aqui que é colocado o papel de fundo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 120vh;
+}
+/* cabeçario */
+header {
+  background: linear-gradient(to bottom, #011f65 90%, rgba(1, 36, 100, 0) 100%);
+  height: 100px;
+}
+/* div do cabeçario */
+.container_Header {
+  display: flex;
+  justify-content: space-between;
+}
+/* div que contem logo e a imagem */
+.container_logo_nome {
+  width: 30%;
+  height: 98px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+/* nome da empresa do cabeçario e do rodapé */
+.nome_empresa {
+  font-family: "Zen Dots", cursive;
+
+  color: white;
+  font-size: 25px;
+  transition: 0.5s linear;
+}
+/* efeito ao passar o mouse por cima do nome da empresa */
+.nome_empresa:hover {
+  transition: 0.5 linear;
+  font-size: 27px;
+  border-bottom: 1px solid white;
+}
+/* logo da empresa do cabeçario e do rodapé */
+.logo {
+  align-self: center;
+  width: 150px;
+  height: 70px;
+  border-radius: 27px;
+  transition: 0.5s linear;
+}
+/* efeito ao passar o mouse por cima do logo da empresa */
+.logo:hover {
+  transition: 0.5s linear;
+  width: 180px;
+  height: 75px;
+}
+
+/* div da barra de navegação */
+.container_navbar {
+  display: flex;
+  flex: 1;
+  justify-content: end;
+}
+
+.container_navbar ul {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.container_navbar li {
+  list-style: none;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+/* botões da barra de navegação */
+.container_navbar a {
+  font-family: "Noto Sans Hebrew", sans-serif;
+  transition: 0.5s linear;
+  text-decoration: none;
+  color: white;
+  padding: 8px 30px;
+  text-transform: uppercase;
+  background-color: #05097d;
+}
+.container_navbar a:hover {
+  transition: 0.5s linear;
+  padding: 10px 40px;
+  border-bottom: 1px solid white;
+}
+
+.container_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 50px;
+  color: white;
+  width: 750px;
+  height: 650px;
+  border-radius: 10px;
+  border: 1.5px solid;
+  background: linear-gradient(
+    180deg,
+    #122e69 0%,
+    rgba(29, 52, 100, 0.73) 27.08%,
+    rgba(40, 61, 103, 0.69) 56.82%,
+    rgba(44, 69, 122, 0.15) 93.75%,
+    rgba(59, 69, 90, 0) 100%
+  );
+}
+.container_box h1 {
+  font-family: "Noto Sans Hebrew", sans-serif;
+  font-size: 35px;
+  margin-top: 20px;
+  width: 500px;
+  line-height: 60px;
+}
+.container_box p {
+  font-family: "Noto Sans Hebrew", sans-serif;
+  font-size: 19px;
+  margin: 40px 100px;
+  line-height: 30px;
+  text-align: justify;
+}
+.container_content {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.div_form {
+  background-color: #012780;
+  width: 550px;
+  border: 1px solid white;
+  margin-right: 130px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.container_form {
+  font-family: "Noto Sans Hebrew", sans-serif;
+  padding: 30px;
+  margin-left: 7%;
+}
+.container_form label {
+  color: white;
+  text-transform: uppercase;
+}
+.container_form input {
+  border-radius: 10px;
+  border: none;
+  height: 40px;
+  width: 400px;
+}
+.container_form textarea {
+  border-radius: 10px;
+  width: 400px;
+}
+.form_quebra {
+  margin: 10px 0;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form_quebra input {
+  width: 170px;
+}
+.termos {
+  width: 400px;
+  position: relative;
+  right: 8px;
+  display: flex;
+  margin: 10px;
+}
+.termos p {
+  width: 2000px;
+  color: white;
+  font-size: 0.7em;
+  text-align: justify;
+}
+.termos span {
+  text-decoration: underline;
+}
+.termos [type="checkbox"] {
+  position: relative;
+  margin-top: 15px;
+  right: 12px;
+  border-radius: 50px;
+}
+
+.container_form button {
+  width: 400px;
+  height: 40px;
+  background-color: #056073;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/*============== rodapé ===========*/
+footer {
+  background: linear-gradient(to top, #011f65 100%, rgba(1, 36, 100, 0.95) 100%);
+  height: 98px;
+  position: relative;
+  width: 100%;
+}
+.container_logo_nome_footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.slogan {
+  /* border: 1px solid red; */
+  color: white;
+  line-height: 35px;
+}
+.slogan a {
+  text-decoration: none;
+  color: white;
+}
+.slogan p {
+  margin-top: 30px;
+  margin-left: 45px;
+  font-family: "Zen Dots", cursive;
+  text-decoration: underline;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.redes_social {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 1%;
+  margin-top: 10px;
+}
+.icone {
+  transition: 0.5s ease-in-out;
+  height: 40px;
+  width: 40px;
+  flex-wrap: nowrap;
+}
+.icone:hover {
+  transform: scale(1.4);
+}

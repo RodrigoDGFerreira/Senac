@@ -1,0 +1,54 @@
+body {
+  background-color: #2e7d4d;
+  font-family: "Roboto", sans-serif;
+}
+header {
+  background-color: #707070;
+  box-shadow: 4px rgba(0, 0, 0, 0.25);
+}
+.btn-header {
+  border-style: none;
+  background-color: #2e7d32;
+  border-radius: 25px;
+  color: white;
+  height: 40px;
+  width: 100%;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.avalicao {
+  margin-left: 30%;
+}
+.name {
+  background-color: #707070;
+  /* width: 50%;
+  margin-left: 25%; */
+  height: 40px;
+  color: white;
+  font-size: 1.5em;
+  font-family: "Roboto Slab" serif;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.foto-perfil {
+  border-radius: 100%;
+  height: 185px;
+  width: 186px;
+}
+.carrosel {
+  background-color: #4a7d2e;
+  width: 33%;
+  height: 33%;
+}
+.name-carrosel {
+  background-color: #707070;
+  margin-left: 25%;
+  font-size: 1.5em;
+  font-family: "Roboto Slab" serif;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+footer {
+  background-color: black;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
